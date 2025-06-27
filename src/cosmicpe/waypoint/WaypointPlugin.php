@@ -97,6 +97,10 @@ final class WaypointPlugin extends PluginBase implements Listener{
 	protected function onEnable() : void{
 		$this->database = libasynql::create($this, $this->getConfig()->get("database"), ["sqlite" => "sqlite.sql", "mysql" => "mysql.sql"]);
 
+		if(!AwaitForm::isRegistered()){
+			AwaitForm::register($this);
+		}
+
 		$command = $this->getCommand("waypoint");
 		$command instanceof PluginCommand || throw new RuntimeException("Command not found");
 		$command->setExecutor(new class implements CommandExecutor{
