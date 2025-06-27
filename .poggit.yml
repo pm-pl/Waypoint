@@ -7,7 +7,7 @@ projects:
     path: ""
     icon: icon.png
     libs:
-      - src: cosmicpe/AwaitForm/AwaitForm
+      - src: cosmoverse/awaitform/AwaitForm
         version: ^0.0.2
       - src: poggit/libasynql/libasynql
         version: ^4.2.3
