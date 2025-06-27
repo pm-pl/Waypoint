@@ -5,6 +5,7 @@ branches:
 projects:
   Waypoint:
     path: ""
+    icon: icon.png
     libs:
       - src: poggit/libasynql/libasynql
         version: ^4.2.3
