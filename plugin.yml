@@ -1,0 +1,19 @@
+name: Waypoint
+main: cosmicpe\waypoint\WaypointPlugin
+api: 5.30.0
+version: 0.0.1
+commands:
+  waypoint:
+    description: Configure waypoints
+    permission: waypoint.command
+    aliases: [wp]
+permissions:
+  waypoint.command:
+    description: Grants access to /waypoint command
+    default: true
+  waypoint.command.set:
+    description: Grants access to /waypoint set command whereby players may set a waypoint to any XYZ position
+    default: true
+  waypoint.command.sethere:
+    description: Grants access to /waypoint sethere command whereby players may set a waypoint at their current position
+    default: true

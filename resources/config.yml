@@ -1,0 +1,30 @@
+# Distance (in blocks) a player must move before their waypoints are updated. A value of 1.0 means waypoints will be
+# updated whenever a player moves by 1 block.
+# Default: 1.0
+movement-delta: 1.0
+
+# Number of waypoints a player can have configured. Note that this differs from the number of waypoints a player can
+# have "selected". See the 'selectable-limit' below for more information.
+# Default: 64
+configurable-limit: 64
+
+# Number of waypoints a player can have selected. This is the maximum number of waypoints that will be shown to a player.
+# Default: 1
+selectable-limit: 1
+
+database:
+  # The database type. "sqlite" and "mysql" are supported.
+  type: sqlite
+
+  # Edit these settings only if you choose "sqlite".
+  sqlite:
+    # The file name of the database in the plugin data folder.
+    # You can also put an absolute path here.
+    file: data.sqlite
+  # Edit these settings only if you choose "mysql".
+  mysql:
+    host: 127.0.0.1
+    # Avoid using the "root" user for security reasons.
+    username: root
+    password: ""
+    schema: your_schema
