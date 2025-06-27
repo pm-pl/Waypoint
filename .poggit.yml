@@ -7,10 +7,10 @@ projects:
     path: ""
     icon: icon.png
     libs:
+      - src: cosmicpe/AwaitForm/AwaitForm
+        version: ^0.0.2
       - src: poggit/libasynql/libasynql
         version: ^4.2.3
-      - src: cosmicpe/awaitform
-        version: ^0.0.2
       - src: SOF3/await-generator/await-generator
         version: ^3.6.1
 ...
