@@ -2,6 +2,8 @@
 Waypoint is a plugin that lets you set a visual holographic marker at your desired position. The concept is similar to
 homes in that a waypoint is a labeled position, but differs in that you need to walk all the way to your desired location.
 
+https://github.com/user-attachments/assets/c629811d-d5b5-4c31-b246-778a8231198e
+
 ## Installation
 Simply download this plugin as a .phar file from Poggit CI and restart your server. Use `/waypoint` or `/wp` to manage
 your personal waypoints. A player may have up to 64 waypoints configured, but can see only 1 waypoint  at any given
