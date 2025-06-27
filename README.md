@@ -10,6 +10,8 @@ your personal waypoints. A player may have up to 64 waypoints configured, but ca
 moment. However, both these values are configurable from [config.yml](resources/config.yml).
 
 ## Usage
+Quick start: use `/wp sethere mywaypoint` to set a waypoint at your position.
+
 A waypoint comprises of 5 properties—a name, a title, X, Y, Z position values. A name is a unique identifier, so you are
 restricted to the usage of alpha-numeric characters and underscores. But you can use fancier characters including color
 codes (`§` and `&`) in the title. Title is displayed in the hologram. X Y Z are the coordinates to your waypoint. You
