@@ -26,8 +26,8 @@ use function sqrt;
 
 final class WaypointRenderer{
 
-	private const int UPDATER_MOVEMENT = 0;
-	private const int UPDATER_WORLD_CHANGE = 1;
+	private const UPDATER_MOVEMENT = 0;
+	private const UPDATER_WORLD_CHANGE = 1;
 
 	readonly public int $dummy_entity_id; // this entity rides the player. the actual waypoint entity rides this entity.
 	readonly public int $entity_id; // this entity is name-tagged
