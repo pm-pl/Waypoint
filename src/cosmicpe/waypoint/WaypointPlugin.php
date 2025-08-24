@@ -443,7 +443,7 @@ final class WaypointPlugin extends PluginBase implements Listener{
 		$tasks = [];
 		if($n_selected + 1 > $n_selectable && isset($this->runtime_lookup[$player->getId()]) && !isset($this->runtime_lookup[$player->getId()][strtolower($name)])){
 			$deselect = array_key_first($this->runtime_lookup[$player->getId()]);
-			$deselect_waypoint = $deselect !== null ? yield from $this->getWaypoint($uuid, $deselect) : null;
+			$deselect_waypoint = $deselect !== null ? yield from $this->getWaypoint($uuid, (string) $deselect) : null;
 			if($deselect_waypoint !== null){
 				$tasks[] = $this->setWaypoint($uuid, $deselect_waypoint[1], $deselect_waypoint[0], false);
 				$tasks[] = $this->syncWaypoints($uuid, [[$deselect_waypoint[1], [$deselect_waypoint[0], false]]]);
