@@ -88,7 +88,7 @@ final class WaypointRenderer{
 		$metadata->setFloat(EntityMetadataProperties::BOUNDING_BOX_WIDTH, 0.01);
 		$metadata->setFloat(EntityMetadataProperties::BOUNDING_BOX_HEIGHT, 0.01);
 		$metadata->setByte(EntityMetadataProperties::RIDER_ROTATION_LOCKED, 1);
-		NetworkEntity::spawnTo($this->viewer, $this->dummy_entity_id, EntityIds::SNOWBALL, Location::fromObject(Vector3::zero(), null), Vector3::zero(), $metadata->getAll());
+		NetworkEntity::spawnTo($this->viewer, $this->dummy_entity_id, EntityIds::SNOWBALL, Location::fromObject($this->viewer->getEyePos(), null), Vector3::zero(), $metadata->getAll());
 
 		$metadata = new EntityMetadataCollection();
 		$metadata->setGenericFlag(EntityMetadataFlags::IMMOBILE, true);
